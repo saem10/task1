@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class MenuScreen extends StatelessWidget {
-  final String selectedMenu = 'Home'; // You can manage this with GetX later
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: Drawer(
-        backgroundColor: const Color(0xFF007BFF), // Blue background
+        backgroundColor: const Color(0xFF007BFF),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             const SizedBox(height: 80),
 
-            // ✅ Highlighted Home Item
+            ///Highlighted Home Item
             Container(
               margin: const EdgeInsets.only(right: 60, left: 0),
               decoration: BoxDecoration(
@@ -39,7 +37,7 @@ class MenuScreen extends StatelessWidget {
               ),
             ),
 
-            // Other Menu Items
+            ///Other Menu Items
             ListTile(
               leading: Icon(Icons.person_2_outlined, color: Colors.white),
               title: Text('Profile', style: TextStyle(color: Colors.white)),

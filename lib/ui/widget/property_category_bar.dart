@@ -11,7 +11,7 @@ class PropertyCategoryBar extends StatelessWidget {
     "Villa",
     "Wallpaper",
     "Natural Sound",
-    // add more if needed
+    ///add more if needed
   ];
 
   @override
@@ -19,7 +19,7 @@ class PropertyCategoryBar extends StatelessWidget {
     return Builder(
       builder: (context) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        color:  Colors.white, // match your background color
+        color:  Colors.white,
         child: Row(
           children: [
             Expanded(

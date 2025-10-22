@@ -29,7 +29,7 @@ class BestForYouSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // 🔹 Section Header
+        /// Section Header
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
@@ -54,7 +54,7 @@ class BestForYouSection extends StatelessWidget {
         ),
         const SizedBox(height: 12),
 
-        // 🔹 Vertical List of Cards
+        /// Vertical List of Cards
         ListView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
@@ -77,7 +77,7 @@ class BestForYouSection extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  // 🏠 House Image
+                  ///House Image
                   ClipRRect(
                     borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(16),
@@ -91,7 +91,7 @@ class BestForYouSection extends StatelessWidget {
                     ),
                   ),
 
-                  // 📄 Info Section
+                  /// Info Section
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(12.0),

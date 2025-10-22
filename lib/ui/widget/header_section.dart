@@ -13,18 +13,12 @@ class HeaderSection extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(0),
-        boxShadow: [
-          /* BoxShadow(
-            color: Colors.black12,
-            blurRadius: 6,
-            offset: const Offset(0, 3),
-          )*/
-        ],
+
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Left side — Location texts
+          ///Left side — Location texts
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
@@ -46,7 +40,7 @@ class HeaderSection extends StatelessWidget {
             ],
           ),
 
-          // Right side — Action icon
+          ///Right side — Action icon
           Icon(
             Icons.add_alert_rounded,
             color: Colors.blueAccent,

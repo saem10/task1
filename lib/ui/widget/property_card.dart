@@ -29,7 +29,7 @@ class PropertyCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // 🔹 Section Header
+        /// Section Header
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
@@ -54,7 +54,7 @@ class PropertyCard extends StatelessWidget {
         ),
         const SizedBox(height: 12),
 
-        // 🔹 Horizontal Property List
+        /// Horizontal Property List
         SizedBox(
           height: 220,
           child: ListView.builder(
@@ -76,7 +76,7 @@ class PropertyCard extends StatelessWidget {
                 ),
                 child: Stack(
                   children: [
-                    // 📍 Distance Badge
+                    ///Distance Badge
                     Positioned(
                       top: 12,
                       right: 12,
@@ -104,7 +104,7 @@ class PropertyCard extends StatelessWidget {
                       ),
                     ),
 
-                    // 🌈 Gradient Overlay + Info
+                    ///Gradient Overlay + Info
                     Positioned(
                       bottom: 0,
                       left: 0,
